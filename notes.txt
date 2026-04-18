@@ -1,7 +1,7 @@
 # redhat_notes
 self revised redhat rhcsa notes 
 rhel vacation 124.txt
- 
+  
 REDHAT ENTERPRISE LINUX CHAPTERS
 LINUX
 CLI
