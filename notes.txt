@@ -294,14 +294,14 @@ usermanagement
 	Option | Long Form 		   | Purpose 													| Example
 	-------|-------------------|------------------------------------------------------------|-------------------------------------------------------
 	-a     | --append  		   | Append supplementary groups (must be used with -G) 		| usermod -a -G wheel alice
-	-c     | --comment COMMENT | Set/change the comment field (often full name/description) | usermod -c "Alice Johnson, Developer" alice
-	-d     | --home HOME_DIR   | Change the user’s home directory 							| usermod -d /srv/alice_home alice
 	-g     | --gid GROUP       | Set the primary group for the user 						| usermod -g developers alice
 	-G     | --groups GROUPS   | Set supplementary groups (comma-separated list) 			| usermod -G wheel,developers alice
-	-L     | --lock            | Lock the account (disables login) 							| usermod -L alice
+	-c     | --comment COMMENT | Set/change the comment field (often full name/description) | usermod -c "Alice Johnson, Developer" alice
+	-d     | --home HOME_DIR   | Change the user’s home directory 							| usermod -d /srv/alice_home alice
 	-m     | --move-home       | Move home directory to new location (use with -d) 			| usermod -d /srv/alice_home -m alice
-	-s     | --shell SHELL     | Change login shell 										| usermod -s /bin/zsh alice
+	-L     | --lock            | Lock the account (disables login) 							| usermod -L alice
 	-U     | --unlock          | Unlock a previously locked account 						| usermod -U alice
+	-s     | --shell SHELL     | Change login shell 										| usermod -s /bin/zsh alice
 	/etc/login.defs managing possible default characteristics of new users about tobe created range of uids and paswod aging specs etc.,
 	
 	userdel:deleted use account without removing home directory
@@ -315,7 +315,7 @@ group management
 	groupadd -r which is used to create groups with system groups
 	groupmod -n used to change groupname
 	groupmod -G used to change used to change gid
-	group del used to deleted group:we cant delete group if its primary group of one user
+	groupdel used to deleted group:we cant delete group if its primary group of one user
 ACCESS
 
 chmod 
