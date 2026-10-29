@@ -9,6 +9,7 @@ CLI
 		command LINE:Text based interface to run programs using commands
 		shell:the program that makes cli possible takes commands run as input and interlink with kernel
 		bash,zsh,
+		shell session types
 			#- Interactive Shells: Used directly by users for command execution (e.g., bash, zsh).
 			#- Login Shells: Invoked at login, initialize environment variables.
 			#- Non-Interactive Shells: Run scripts without user interaction.
@@ -19,7 +20,8 @@ CLI
 		shell basics:comand-program to run; options preceded by - or --; arguements targets over which program has to run
 	EXECUTING COMMANDS IN BASH SHELL
 			shell basics:command-program to run; options preceded by - or --; arguements targets over which program has to run
-			metacharacters in shell: bash : ; used for seperating commands
+			metacharacters in shell: bash : 
+				; used for seperating commands
 			useful tricks
 			simple commands examples date; passwd ;file ;
 			usage of tab;  backslash\ at end of line shell acknowledges continuation of coand by >
